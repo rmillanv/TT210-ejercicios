@@ -1,0 +1,117 @@
+body{
+    background-color: yellow;
+    margin: 0px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: rgb(14, 9, 48);
+    display: flex;
+    /*width: 100vw;*/
+    height: 120px;
+    color: white;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header img{
+    height: 100px;
+}
+p{
+    margin: 0px;
+    padding: 20px 0px;
+}
+main{
+    background-color: rgb(14, 38, 106);
+    margin: 0px;
+    height: 500px;
+}
+.suma{
+    display: flex;
+    align-items: center;
+
+}
+form{
+    background-color: rgba(255, 255, 255, 0.633);
+    width: 50vw;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-items: center;
+}
+.saludo{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.num{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    
+}
+i {
+    font-size: 50px; /* Ajusta el tamaño */
+    color: blue; /* Cambia el color */
+}
+.resultado{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+.resultado input{
+    width: 150px;
+}
+.calcular{
+    margin: 10px;
+    width: 200px;
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(141, 141, 184);
+    background-color: blue;
+    color: white;
+    border: solid white 1px;
+    padding: 3px;
+}
+input{
+    width: 80px;
+    height: 30px ;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: rgb(62, 46, 171);
+    color: beige;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.perfil{
+    /*background-color: blue;*/
+    width: 250px;
+}
+.copyright{
+    display: flex;
+    background-color: chartreuse;
+    width: 300px;
+    align-items: center;
+    justify-content: space-around;
+}
+.perfil img{
+    height: 70%;
+    border-radius: 50%;
+    border-color: black 4px;
+}
+img{
+    height: 100%;
+}
