@@ -31,10 +31,9 @@ function calcularfibo(n) {
     if (n == 0) {
         fibo = [0];
     } else if (n == 1) {
-        fibo = [elemento1, elemento2];
+        fibo = [0,1];
     } else {
-        fibo[0] = elemento1;
-        fibo[1] = elemento2;
+        fibo = [elemento1, elemento2];
         for (let i = 2; i < n; i++) {
             fibo[i] = fibo[i - 1] + fibo[i - 2];
         }
@@ -50,4 +49,5 @@ btn.addEventListener("click", () => {
     let hijo = document.createElement("h3");
     hijo.innerHTML = `La serie de Fibonacci del ${numero} es ${resultado.join(", ")}`;
     salida.appendChild(hijo);
+    //document.body.innerHTML
 });
