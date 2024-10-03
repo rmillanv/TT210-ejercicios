@@ -10,6 +10,7 @@ let salida = document.getElementById("resultado");
 let matriz = [];
 
 /*acceder a un elemento del DOM  mediante su atributo id. Esta función busca en el documento HTML el elemento que tenga un identificador único (id)*/
+//Crea una matriz de dimensiones dadas por el usuario e inicializa los campos en 0. Luego, llama a renderizarMatriz para mostrarla
 document.getElementById('crearMatriz').addEventListener('click', function() {   
     const filas = parseInt(document.getElementById('filas').value);
     const columnas = parseInt(document.getElementById('columnas').value);
@@ -17,6 +18,7 @@ document.getElementById('crearMatriz').addEventListener('click', function() {
     renderizarMatriz();
 });
 
+//Usa map para sumar 1 a cada elemento de la matriz. Luego vuelve a renderizarla.
 document.getElementById('sumarUno').addEventListener('click', function() {
     if (matriz.length > 0) {
         matriz = matriz.map(fila => fila.map(valor => valor + 1));
@@ -47,8 +49,11 @@ function renderizarMatriz() {
             table.appendChild(tr);
         });
 
+        //salida.appendChild(table);
        matrizContainer.appendChild(table);
-       //salida.appendChild(table);
+       salida.innerHTML = `El resultado de sumar 1 a toda la matriz es; ${matriz.join(", ")} `;
+       //salida.innerHTML = `el resultado de sumar 1 a toda la matriz de ${filas} x ${columnas} es:`;
+       
     }
 }
 
