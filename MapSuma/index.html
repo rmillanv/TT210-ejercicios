@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MapSuma</title>
+</head>
+<body>
+    <div class="container"></div>
+    <header>
+        <img src="Logo/Logo_del_Ministerio_de_Tecnologías.png" alt="logo mintic">
+        <h1>**Matriz.prototipo.mapa()**</h1>
+        <img src="Logo/LOGO_PLAN_DE_DESARROLLO_COLOMBIA_POTENCIA_DE_LA_VIDA_2022-2026.png" alt="logo de colombia">
+        <link rel="stylesheet" href="style.css">
+    </header>
+    <main>
+        <div class="matriz">
+            <form onsubmit="return false;">                          
+                <h1>Captura de Matriz</h1>
+                <h2><p class="saludo">El map()método de Arrayinstancias crea una nueva matriz que se llena con los resultados de llamar a una función proporcionada en cada elemento de la matriz que realiza la llamada.</p></h2>
+                <div class="matriz">
+                    <div class="num">
+                        <label for="filas">Filas:</label>
+                        <input type="number" id="filas" value="0" min="1">                    
+                    </div>
+                    <div class="num">
+                        <label for="columnas">Columnas:</label>
+                        <input type="number" id="columnas" value="0" min="1">
+                    </div>
+                    <div>
+                        <button class="crearMatriz" id="crearMatriz">Crear Matriz</button>
+                    </div>
+                </div>  
+                <div id="matrizContainer"></div>         
+                 <div>
+                    <button class="sumarUno" id="sumarUno">Sumar 1 a la Matriz</button>
+                </div>
+                <div class="resultado" id="resultado"></div>
+            </form>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
