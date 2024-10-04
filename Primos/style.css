@@ -19,9 +19,6 @@ header{
 header img{
     height: 100px;
 }
-img logo_pestana{
-    height: 100px;
-}
 p{
     margin: 0px;
     padding: 20px 0px;
@@ -31,7 +28,7 @@ main{
     margin: 0px;
     height: 500px;
 }
-.cadena{
+.fibo{
     display: flex;
     align-items: center;
 }
@@ -61,7 +58,7 @@ form{
     flex-wrap: nowrap;
     
 }
-.trans{
+.mostrar{
     margin: 10px;
     width: 200px;
     font-size: 24px;

@@ -1,0 +1,342 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 1px auto;
+    background: #fff;
+    padding: 1px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.header {
+    position: relative;
+    top: 0px; 
+    left: 0px;
+    background-color:#78d2de;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
+}
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.header p {
+    margin: 5px 0;
+}
+.section {
+    margin-bottom: 20px;
+}
+header, section {
+    margin-bottom: 20px; /* Espaciado entre secciones */
+}
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.job, .SectionEducation {
+    margin-bottom: 15px;
+}
+.job h3, .SectionEducation h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+.fecha {
+    color: #777;
+    font-size: 0.9em;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+ul li {
+    margin-bottom: 5px;
+    
+}
+.title{
+    line-height: 1.1;
+    position: absolute;
+    z-index: 1;
+    padding-left: 10px;
+    flex: 1;
+    text-align: center;
+}
+.title h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #120a0a;
+}
+
+.title p {
+    margin: 0;
+    font-size: 20px;
+    color: #180c0c;
+}
+.fotoperfil {
+    position: absolute; 
+    left: 75%;
+}
+.FotoCV {
+    display: block; /* Evitar espacios debajo de la imagen */
+    width: 160px; /* Ancho del contenedor cuadrado */
+    height: 160px; /* Alto del contenedor cuadrado */
+    object-fit: cover; /* Mantiene la proporción de la imagen y la recorta si es necesario */
+    clip-path: inset(0); /* Recorta la imagen en una forma cuadrada */
+    background-color: blue;
+    border: 10 solid white; /* Borde de 5 píxeles de grosor, sólido y color negro */
+    padding: 5px;
+    border-radius: 100%;
+    opacity: 0.8;
+}
+.cuadrilatero {
+    width: 1000px;  /* Ancho del cuadrilátero */
+    height: 200px; /* Alto del cuadrilátero */
+    background-color: #00B0F0; /* Color de fondo */
+    border: 2px solid #2980b9; /* Borde */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 100%); /* Forma del cuadrilátero */
+}
+.Inf_contacto {
+    line-height: 1;
+}
+.Infor{
+    display: flex; /* Flexbox para alinear las secciones izquierda y derecha */
+    flex-wrap: nowrap
+}
+.contenidoPerfil{
+    justify-content: flex-end;
+    line-height: 1;
+}
+.CuadroIzq {
+    width: 350px; /* Ancho fijo para CuadroIzq */
+    background-color: #78d2de; /* Color de fondo */
+    line-height: 1;
+    width: 100%;
+    max-width: 350px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    flex: 0 0 300px; /* Ancho fijo para la columna izquierda */
+    padding: 1px; /* Añadir padding si es necesario */
+}
+.Inf_contacto ul{
+    list-style-type: none; /* Quita los puntos */
+    padding-left: 25px;
+}
+.CorreoEmail {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+}
+.CorreoEmail i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+.CorreoEmail p {
+    margin: 0; /* Elimina el margen por defecto del párrafo */
+}
+.Direccion {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+}
+.Direccion i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+.Direccion p {
+    margin: 0; /* Elimina el margen por defecto del párrafo */
+}
+.celular {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+}
+.celular i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+.celular p {
+    margin: 0; /* Elimina el margen por defecto del párrafo */
+}
+.linkedin {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+}
+.linkedin i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+.linkedin a {
+    margin: 0; /* Elimina el margen por defecto del párrafo */
+}
+.whatsapp {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+}
+.whatsapp i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+.whatsapp p {
+    margin: 0; /* Elimina el margen por defecto del párrafo */
+}
+.Facebook {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+}
+.Facebook i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+.Facebook p {
+    margin: 0; /* Elimina el margen por defecto del párrafo */
+}
+.CuadroIzq h2{
+    margin: 10;
+    padding-left: 20px; /* Sangría interna */
+    font-size: 24px;
+    color: black;
+}
+.SectionEducation {
+    flex: 1;
+    line-height: 1;
+}
+.SectionEducation h3{
+    margin: 10px;
+    padding-left: 10px; /* Sangría interna */
+    font-size: 16px;
+    color: rgb(88, 88, 111);
+}
+.SectionEducation p{
+    padding-left: 20px; /* Sangría interna */
+    font-size: 14px;
+    color: rgb(88, 88, 111);
+    line-height: 0;
+}
+.certif {
+    flex: 1;
+    line-height: 1;
+}
+.certif h3{
+    margin: 5px;
+    padding-left: 15px; /* Sangría interna */
+    font-size: 16px;
+    color: rgb(88, 88, 111);
+}
+.certif p{
+    margin: 0;
+    padding-left: 20px; /* Sangría interna */
+    font-size: 12px;
+    color: rgb(88, 88, 111);
+    line-height: 1;
+}
+.CuadroDer {
+    flex: 1; /* Permite que CuadroDer ocupe el espacio restante */
+    padding-left: 5px; /* Espaciado interno */
+    line-height: 0;
+    padding: 10px; /* Añadir padding si es necesario */
+}
+.contenidoPerfil{
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.CuadroDer h2{
+    line-height: 1;
+    font-size: 16px;
+    width: 100%;
+    max-width: 350px;
+}
+.CuadroDer h3{
+    padding-left: 10px; /* Sangría interna */
+    margin: 10px;
+    line-height: 1;
+    font-size: 14px;
+    width: 50%;
+    max-width: 350px;
+}
+.CuadroDer h4{
+    padding-left: 35px; /* Sangría interna */
+    margin: 5px;
+    line-height: 1;
+    font-size: 14px;
+    width: 50%;
+    max-width: 350px;
+}
+.CuadroDer p{
+    text-align: justify;
+    margin: 0px;
+    padding-left: 20px; /* Sangría interna */
+    line-height: 1;
+    font-size: 14px;
+    width: 100%;
+    max-width: 535px;
+}
+.Experiencia{
+    margin: 0;
+    padding-left: 30px; /* Sangría interna */
+    font-size: 24px;
+    color: black;
+}
+.RefPers{
+    padding-left: 30px; /* Sangría interna */
+    text-align: justify;
+    line-height: 1;
+    font-size: 18px;
+    width: 100%;
+    max-width: 535px;
+}
+.RefPers h3{
+    padding-left: 30px; /* Sangría interna */
+    margin: 10px;
+    line-height: 1;
+    font-size: 16px;
+    width: 100%;
+    max-width: 350px;
+}
+table {
+    padding: 10px;
+    width: 90%;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centra la tabla */
+    border-collapse: collapse; /* Evita bordes duplicados */
+}
+th, td {
+    text-align: center; /* Centra el texto */
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+.Enc th{
+    text-align: center; /* Centra el texto */
+}
+th {
+    text-align: center; /* Centra el texto */
+    background-color: #78d2de;
+    color: blue;
+}
+
+tr:nth-child(even) {
+    background-color: mintcream;
+}
+
+tr:hover {
+    background-color: #dbeee6;
+}
+th, td {
+    border: 1px solid #ddd; /* Añadir bordes a las celdas de la tabla */
+    padding: 5px;
+    text-align: left; /* Alinear texto a la izquierda */
+}
+

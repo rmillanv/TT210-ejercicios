@@ -1,0 +1,41 @@
+
+body {
+    background-color: rgb(133, 238, 240);
+    margin: 0;
+    font-family: "oswald", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 0;
+}
+.header {
+    background-color: blue;
+    /*background-color:rgb(213, 248, 132);*/
+    border: solid red 2px;
+}
+.top-bar{
+    border-style: dashed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo{
+    background-color: rgba(1, 31, 31, 0.397);
+    width: 125px;
+    margin: 0px;
+}
+.main-menu{
+    background-color: blue;
+}
+.nav{
+    background-color: white;
+    display: flex;
+    gap: 20px;  /*separa los textos*/
+    text-transform: uppercase;  /*convierte en mayuscula*/
+}
+.nav li{
+    list-style-type: none; /*quita las viñetas*/
+}
+.nav a{
+    text-decoration: none;  /*quita las delineado de hipervinculo*/
+}
