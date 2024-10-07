@@ -1,0 +1,87 @@
+
+
+body{
+    background-color: rgb(14, 38, 106);
+    margin: 0px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: rgb(14, 9, 48);
+    display: flex;
+    /*width: 100vw;*/
+    height: 120px;
+    color: white;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header img{
+    height: 100px;
+}
+img logo_pestana{
+    height: 100px;
+}
+p{
+    margin: 0px;
+    padding: 20px 0px;
+}
+main{
+    background-color: rgb(14, 38, 106);
+    margin: 0px;
+    height: 500px;
+}
+.cadena{
+    display: flex;
+    align-items: center;
+}
+form{
+    background-color: rgba(255, 255, 255, 0.633);
+    width: 50vw;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-items: center;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
