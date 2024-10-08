@@ -1,4 +1,8 @@
 
+:root{
+    --titulos: yellow;
+}
+
 body {
     background-color: rgb(133, 238, 240);
     margin: 0;
@@ -28,7 +32,8 @@ body {
     background-color: blue;
 }
 .nav{
-    background-color: white;
+    /*background-color: white;*/
+    color: white;
     display: flex;
     gap: 20px;  /*separa los textos*/
     text-transform: uppercase;  /*convierte en mayuscula*/
@@ -38,4 +43,57 @@ body {
 }
 .nav a{
     text-decoration: none;  /*quita las delineado de hipervinculo*/
+    color: white;
+}
+.nav a:hover{
+    color: var(--titulos);
+    text-decoration: underline;
+}
+.hero{
+    color: white;
+    background-color: blue;
+    background-image: url(Imagenes/Sporting_Capital3.png);
+    height: 500px;
+    width: 100%;
+    margin: auto;
+}
+.herocontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+.herotitle{
+    font-size: 3em;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 60%;
+}
+.herotitle span{
+    color: var(--titulos);
+}
+.herotext{
+    text-align: justify;
+    width: 60%;
+    font-family: Poppins, sans-serif;
+}
+.cta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    gap: 20px;
+}
+.cta a{
+    background-color: chartreuse;
+    color: blue;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
 }
