@@ -7,9 +7,9 @@ body{
     height: 100vh;
     font-family: Arial, sans-serif;
 }
-.Calculadora{
+.calculadora{
     background-color: blue;
-    color:antiquewhite;
+    color:rgb(13, 10, 6);
     width: 350px;
     /*display: grid;*/
     border-radius: 8px;
