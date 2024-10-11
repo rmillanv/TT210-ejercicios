@@ -57,11 +57,11 @@ body {
 .nav a{
     text-decoration: none;  /*quita las delineado de hipervinculo*/
     color: var(--textoblanco);
-    text-shadow: 
+    /*text-shadow: 
     1px 1px 0px var(--color2),
     -1px -1px 0px var(--color2),
     1px -1px 0px var(--color2),
-    -1px 1px 0px var(--color2);
+    -1px 1px 0px var(--color2);*/
 }
 .nav a:hover{
     color: var(--titulos);
