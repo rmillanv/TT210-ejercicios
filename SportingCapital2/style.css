@@ -1,10 +1,11 @@
 /*    --superior: rgba(12, 12, 111, 0.953);*/
 :root{
     --titulos: #dbff00;
-    --superior: rgba(12, 12, 111, 0.953);
-    --color1: rgba(12, 12, 111, 0.953);
+    --superior: rgb(138, 237, 72);
+    --color1: white;
     --color2: rgba(12, 12, 111, 0.953); /*blue*/
-    --textoblanco: white;
+    --textoblanco: #BABBBB;
+    --textoOsc: black;
 }
 body {
     /*background-color: rgb(133, 238, 240);*/
@@ -16,7 +17,7 @@ body {
 }
 .header {
     /*background-color: blue;*/
-    background-color: var(--color1);
+    background-color: var(--color2);
     display: flex;
     flex-direction: column;
     /*justify-content: flex-end;*/
@@ -37,7 +38,7 @@ body {
     z-index: 1;*/
 }
 .logo{
-    background-color: var(--superior);
+    background-color: var(--color2);
     width: 125px;
     margin: 0px;
 }
@@ -46,7 +47,7 @@ body {
 }
 .nav{
     /*background-color: white;*/
-    color: var(--textoblanco);
+    color: var(--color2);
     display: flex;
     gap: 30px;  /*separa los textos*/
     text-transform: uppercase;  /*convierte en mayuscula*/
@@ -56,7 +57,7 @@ body {
 }
 .nav a{
     text-decoration: none;  /*quita las delineado de hipervinculo*/
-    color: var(--textoblanco);
+    color: var(--color1);
     /*text-shadow: 
     1px 1px 0px var(--color2),
     -1px -1px 0px var(--color2),
@@ -68,7 +69,7 @@ body {
     text-decoration: underline;
 }
 .hero{
-    color: var(--textoblanco);
+    color: var(--color1);
     background-color: var(--color2);
     background-position: top right;
     background-image: url(Imagenes/Sporting_Capital4.png);
@@ -143,9 +144,9 @@ body {
     background-color: var(--titulos);
 }
 #boton1:hover{
-    background-color: var(--textoblanco);
-    color: black;
-    border: solid black 2px;
+    background-color: var(--color1);
+    color: var(--color2);
+    border: solid var(--textoOsc) 2px;
 }
 #boton2{
     border: solid var(--titulos) 2px;
@@ -157,8 +158,91 @@ body {
     -1px 1px 0px var(--color2); /* Borde en cuatro direcciones */
 }
 #boton2:hover{
-    background-color:var(--textoblanco);
-    color: black;
-    border: solid black 2px;
+    background-color:var(--color1);
+    color: var(--color2);
+    border: solid var(--textoOsc) 2px;
     text-shadow: none
 }
+
+
+.elementor-container{
+    color: var(--titulos);
+    text-decoration: underline;
+    background-color: var(--color2);
+    font-family: Poppins, sans-serif;
+    font-size: 14px; /* Tamaño base */
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: var(--textoblanco);
+}
+.elementor-container li:hover{
+    color: var(--titulos);
+    text-decoration: underline;
+}
+.elementor-container span:hover{
+    color: var(--titulos);
+    text-decoration: underline;
+}
+.elementor-container h2{
+    color: var(--color1);
+    font-family: Poppins, sans-serif;
+    font-size: 18px; /* Tamaño base */   
+    display: flex;
+    justify-content: center;
+ }
+ .elementor-container h3{
+    color: var(--textoblanco);
+    font-family: Poppins, sans-serif;
+    font-size: 13px; /* Tamaño base */   
+    display: flex;
+    justify-content: center;
+ }
+.elementor-container1{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+ }
+.elementor-container2{
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+
+}
+.elementor-container-group{
+    width: 90%;
+
+}
+.logo-inferior{
+    display: flex;
+    width: 150px;
+}
+.elementor-icon-list-item{
+    display: flex;
+    list-style-type: none; /* Quita los puntos */
+    padding-left: 25px;
+    color: var(--textoblanco);
+}
+.elementor-icon-list-text{
+    color: var(--textoblanco);
+    line-height: 1.8;
+    text-decoration: none;
+}
+.elementor-icon-list-icon{
+    color: var(--textoblanco); 
+    margin-right: 10px;  
+}
+.elementor-icon-list-item1{
+    display: flex;
+    text-decoration: none;
+}
+
+i {
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+    width: 10px;
+}
+.sin-linea {
+    text-decoration: none; /* Elimina la línea de abajo */
+}
+
