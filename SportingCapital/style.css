@@ -2,14 +2,17 @@
 /*    --superior: rgba(12, 12, 111, 0.953);*/
 :root{
     --titulos: #dbff00;
-    --superior: rgba(12, 12, 111, 0.953);
-    --color1: rgba(12, 12, 111, 0.953);
+    --superior: rgb(138, 237, 72);
+    --color1: white;
     --color2: rgba(12, 12, 111, 0.953); /*blue*/
     --textoblanco: #BABBBB;
+    --textoOsc: black;
+    --color3:rgba(12, 12, 111, 0.6);
+    --color4:rgba(12, 12, 111, 1);
 }
 
 body {
-    background-color: var(--color2);
+    background-color: var(--color1);
     margin: 0;
     font-family: "oswald", sans-serif;
     line-height: 1.6;
@@ -44,12 +47,12 @@ body {
     width: 125px;
     margin: 0px;
 }
-.main-menu{
-    /*background-color:var(--superior);*/
+.main{
+    background-color:var(--superior);
 }
 .nav{
     /*background-color: white;*/
-    color: var(--textoblanco);
+    color: var(--color1);
     display: flex;
     gap: 30px;  /*separa los textos*/
     text-transform: uppercase;  /*convierte en mayuscula*/
@@ -64,14 +67,14 @@ body {
 }
 .nav a{
     text-decoration: none;  /*quita las delineado de hipervinculo*/
-    color: var(--textoblanco);
+    color: var(--color1);
 }
 .nav a:hover{
     color: var(--titulos);
     text-decoration: underline;
 }
 .hero{
-    color:var(--textoblanco);
+    color:var(--color1);
     background-color: var(--color2);
     background-position: top right;
     background-image: url(Imagenes/Sporting_Capital4.png);
@@ -101,7 +104,7 @@ body {
     1px -1px 0px var(--color2),
     -1px 1px 0px var(--color2); /* Borde en cuatro direcciones */
 }
-.herotitle span{
+.herotitle span, .fut span{
     color: var(--titulos);
     text-shadow: 
     1px 1px 0px var(--color2),
@@ -165,9 +168,9 @@ body {
     border: solid black 2px;
     text-shadow: none
 }
-
-
-
+footer{
+    background-color: var(--color2);
+}
 .elementor-container{
     font-family: Poppins, sans-serif;
     font-size: 14px; /* Tamaño base */
@@ -200,6 +203,7 @@ body {
     text-decoration: none;
 }
 .logo-inferior{
+    margin: 50px;
     display: flex;
     width: 150px;
 }
@@ -229,3 +233,81 @@ i {
 .sin-linea {
     text-decoration: none; /* Elimina la línea de abajo */
 }
+.cajas{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 50px;
+    display: flex;
+    margin: 20px auto;
+    gap: 30px;
+}
+.fut{
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: white;
+    height: 300px;
+    width: 25%;
+    color: var(--color1);
+    text-shadow: 
+    1px 1px 0px var(--color2),
+    -1px -1px 0px var(--color2),
+    1px -1px 0px var(--color2),
+    -1px 1px 0px var(--color2);
+}
+.fut h3{ 
+    margin: 0px ;
+    padding: 0px 0px 0px 20px;
+}
+.fut p{
+    margin: 0px;
+    padding: 5px 5px 5px 8px;
+    font-family: Poppins, sans-serif;
+    font-stretch: condensed;
+    line-height: 1.2em;
+    font-size: 0.8em;
+}
+.cajita{
+    background-color: var(--color3) ;
+    border-radius: 20px;
+}
+.fut1{
+    border: solid 1px var(--color2);
+    background-image: url(Imagenes/IMG-20241010-WA0003.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.fut2{
+    border: solid 1px var(--color2);
+    background-image: url(Imagenes/IMG-20241010-WA0001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.fut3{
+    border: solid 1px var(--color2);
+    background-image: url(Imagenes/IMG-20241010-WA0004.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.fut4{
+    border: solid 1px var(--color2);
+    background-image: url(Imagenes/IMG-20241010-WA0002.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.video{
+    border-radius: 20px;
+    margin: 0px;
+}
+.cajas-video{
+    border: solid 2px var(--color2);
+    background-color: var(--color4);
+    border-radius: 20px;
+    margin: 20px;
+}
+
