@@ -74,7 +74,7 @@ body {
     color: var(--color1);
     background-color: var(--color2);
     background-position: top right;
-    background-image: url(Imagenes/Sporting_Capital4.png);
+    background-image: url(Imagenes/VideoSporting1.mp4);
     background-repeat: no-repeat;
     /*background-size: cover;*/
     background-position: top right;
@@ -82,11 +82,46 @@ body {
     width: 100%;
     margin: auto;
 }
+.hero-inicio{
+    display: flex;
+}
+.video-container {
+    border-radius: 100px;
+    margin: 0px 40px 0px 0px;
+    position: relative;
+    max-width: 800px;
+    border: 2px solid var(--color2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+.video-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color4); /* Color con opacidad */
+    pointer-events: none; /* Permite interacciones con el video */
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color3);
+    pointer-events: none; /* Permite interacciones con el video */
+}
 .herocontent{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 45%;
+    width: 50%;
     margin: 10px 0px 0px 20px;
 }
 .herotitle{
@@ -329,36 +364,3 @@ i {
 }
 
 
-
-.video-container {
-    border-radius: 100px;
-    margin: 10px 0px 0px 20px;
-    position: relative;
-    max-width: 75%;
-    border: 2px solid var(--color2);
-    border-radius: 20px;
-    overflow: hidden;
-}
-video {
-    width: 100%;
-    height: auto;
-}
-.video-container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--color4); /* Color con opacidad */
-    pointer-events: none; /* Permite interacciones con el video */
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--color3);
-    pointer-events: none; /* Permite interacciones con el video */
-}
