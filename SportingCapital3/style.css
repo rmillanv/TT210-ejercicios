@@ -387,8 +387,66 @@ i {
     border-radius: 20px;
     margin: 20px;
 }*/
-.cajas-imagen{
+.cajas-imagen1{
     margin: 10px;
+    border-radius: 20px;
+    width: 68%;
+}
+.about{
+    display: flex;
+
+}
+.about-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 50px;
+}
+.about-title{
+    color: var(--color2);
+    font-size: 2em;
+    font-weight: bold;
+    font-stretch: condensed;
+    text-transform: uppercase;
+    width: 90%;
+}
+.tag-line{
+    font-family: Poppins, sans-serif;
+    font-stretch: condensed;
+    line-height: 1.5em;
+    font-size: 1em; 
+    width: 90%; 
+}
+.about p{
+    font-family: Poppins, sans-serif;
+    font-stretch: condensed;
+    line-height: 2em;
+    font-size: 1em; 
+    width: 90%;    
+}
+.foto{
+    margin: auto;
+    display: contents;
+    margin: 20px;
+}
+.marco{
+    font-size: 90px;
+    position: absolute;
+    top: 120%;
+    text-transform: uppercase;
+    opacity: 0.1;
+    text-align: center;
+    left: 20px;
+}
+.foto img{
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px;
+}
+.cajas-imagen{
+    margin: 30px;
     border-radius: 20px;
     width: 68%;
 }
