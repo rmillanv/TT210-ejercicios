@@ -10,7 +10,7 @@
     <title>Sporting Capital</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Enlace a Font Awesome -->
-    <link rel="stylesheet" href="StyleNosotros.css"> <!--esta line agrega el estilo-->
+    <link rel="stylesheet" href="instalaciones.css"> <!--esta line agrega el estilo-->
     <link rel="icon" href="Imagenes/Sporting_Capital_Blanco.jpg" type="image/x-icon"><!-- Icono del sitio que aparece en la pestaña del navegador -->
     <link rel="preconnect" href="https://fonts.googleapis.com">  <!--estilos de fuentes de google-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <!--estilos de fuentes de google-->
@@ -21,7 +21,7 @@
 
 
 </head>
-<body>
+<header class="elementor-element">
     <div class="elementor-element">
         <div class="top-bar">
             <div class="logo_pestana">
@@ -51,57 +51,50 @@
             </a>
         </div>
     </div> 
+</header>
+<body>
+    
     <Div class="container">       
         <header class="header">                    
  
         </header>
     </div>
     <main>
-        <section class="cajas">
-            <div class="fut fut1">
-                <div class="cajita">
-                    <h3>CATEGORIA <span>BABY</span></h3>
-                    <p>Requieren de un trabajo especial de fortalecimiento de capacidades, motrices, tecnica y habilidades fisicas - niños y niñas desde los 3 a los 5 años</p>
+        <section class="historical-review-seccion">
+            <div class="titulos"> 
+                <div class="contenedor">
+                    
+                    <h6 class="marco">Escuela de Formacion Sporting Capital</h6>
                 </div>
             </div>
-            <div class="fut fut2">
-                <div class="cajita">
-                    <h3>CATEGORIA <span>INICIACION</span> </h3>
-                    <p>Inicia tu formación donde incrementas y perfeccionas tus habilidades sociales,trabajo en equipo,respeto y disiplina - edades de 5 a los 8 años</p>
+            <div class="historical-review">
+                <div class="historical-review-video item">
+                    <video autoplay loop muted>
+                        <source src="videos/ResenaHist.mp4" type="video/mp4">                           
+                    </video>
                 </div>
-            </div>
-            <div class="fut fut3">
-                <div class="cajita">
-                    <h3>CATEGORIA <span>SEGUIMIENTO</span></h3>
-                    <p>Aumenta y mejora la resistencia y la velocidad, así como la coordinación motora y visoespacial -niños y niñas desde los 9 a los 17 años</p>
-                </div>
-            </div>
-            <div class="fut fut4">
-                <div class="cajita">
-                    <h3>ENTRENAMIENTO <span>PERSONALIZADO</span></h3>
-                    <p>Trabajo individual de habilidades físicas que les ayuda a tener un correcto desarrollo y a potenciar sus capacidades - Todas las categorias</p>
-                </div>
+                <div class="historical-review-content item">
+                    <h2 class="historical-review-title">SEDE 1</h2>
+                    <p class="historical-review-paragraph">La escuela de formación deportiva Sporting Capital surgió en el año 2024 con el fin de promover el deporte en niños, niñas y jóvenes de la localidad de Suba, incentivando la práctica y el aprendizaje de valores por el medio del fútbol. Así, la escuela de formación deportiva se ha ido constituyendo poco a poco, generando un gran impacto en la comunidad, pues fomenta el desarrollo integral de los niños y jóvenes.</p>                                   
+                </div>   
             </div>
         </section>
-        <section class="about">
-            <h6 class="marco">Escuela de Formacion Sporting Capital</h6>
-            <div class="foto">
-                <img class="cajas-imagen1" src="Imagenes/SportingCapital_Azul_sinfondo1.png" alt="imagen sin funcionariosde">                
-            </div>
-            <div class="about-content">
-                <div class="about-title">Acerca de la Escuela de formación Deportiva Sporting Capital</div>                
-                <div class="tag-line" >"Cuando quieres algo con suficiente intensidad, ningún sacrificio es demasiado grande"</div>
-                <p>Un grupo se convierte en un equipo cuando cada miembro está lo bastante seguro de sí mismo y su contribución como para elogiar las habilidades de los demás.</p>
+        <section>
+            <h3>Ubicación en el Mapa</h3>
+            <div id="map"></div>            
+            <!-- Script de Google Maps con tu clave de API -->
+            <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap" async defer></script>     
+        
+
+            <h3>Ubicación Actual</h3>
+            <div class="location">
+                <p>Latitud (decimal): <span>4.74693° N</span></p>
+                <p>Latitud (grados/minutos/segundos): <span>4° 44' 49" Norte</span></p>
             </div>
         </section>
 
-        <section class="cajas">
-            <div>
-                <div class="cajas-imagen">
-                    <img class="cajas-imagen" src="Imagenes/Sporting_Capital_inicio.png" alt="200px">
-                </div>
-            </div>
-        </section>
+
+       
     </main>
      
 </body>

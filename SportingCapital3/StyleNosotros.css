@@ -6,7 +6,7 @@
     --color2: #0c0c6f; /*blue*/
     --textoblanco: #BABBBB;
     --textoOsc: black;
-    --color3:rgba(12, 12, 111, 0.6);
+    --color3:rgba(12, 12, 111, 0.4);
     --color4:#0c0c6f09;
     --color5:rgba(12, 12, 111, 0.7);
 }
@@ -71,7 +71,7 @@ li.current-menu-nosotros > a {
 /*  el head de la pagina parte superior genera estilo del head*/
 .elementor-element{
     backdrop-filter: blur(2px);
-    background-color: var(--color2);
+    background-color: var(--color3);
     z-index: 2;
     top: 0;
     display: flex;
@@ -216,79 +216,7 @@ i {
     text-decoration: none; /* Elimina la línea de abajo */
 }
 
-/*  el head de la pagina caja de fotos */
-.cajas{
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5px 50px;
-    display: flex;
-    margin: 20px auto;
-    gap: 30px;
-}
-.fut{
-    margin: 20px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    background-color: white;
-    height: 300px;
-    width: 25%;
-    color: var(--color1);
-    text-shadow: 
-    1px 1px 0px var(--color2),
-    -1px -1px 0px var(--color2),
-    1px -1px 0px var(--color2),
-    -1px 1px 0px var(--color2);
-}
-.fut h3{ 
-    margin: 0px ;
-    padding: 0px 0px 0px 20px;
-}
-.fut p{
-    margin: 0px;
-    padding: 5px 5px 5px 8px;
-    font-family: Poppins, sans-serif;
-    font-stretch: condensed;
-    line-height: 1.2em;
-    font-size: 0.8em;
-}
-.cajita{
-    background-color: var(--color3) ;
-    border-radius: 20px;
-}
-.fut1{
-    border: solid 1px var(--color2);
-    background-image: url(Imagenes/IMG-20241010-WA0003.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-}
-.fut2{
-    border: solid 1px var(--color2);
-    background-image: url(Imagenes/IMG-20241010-WA0001.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-}
-.fut3{
-    border: solid 1px var(--color2);
-    background-image: url(Imagenes/IMG-20241010-WA0004.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-}
-.fut4{
-    border: solid 1px var(--color2);
-    background-image: url(Imagenes/IMG-20241010-WA0002.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-}
-.cajas-imagen1{
-    margin: 10px;
-    border-radius: 20px;
-    width: 68%;
-}
+
 .about{
     display: flex;
 
@@ -334,20 +262,6 @@ i {
     display: contents;
     margin: 20px;
 }
-.marco{
-    font-size: 90px;
-    position: absolute;
-    top: 120%;
-    text-transform: uppercase;
-    opacity: 0.08;
-    text-align: center;
-    left: 20px;
-    text-shadow: 
-    1px 1px 2px var(--color2),
-    -1px -1px 2px var(--color2),
-    1px -1px 2px var(--color2),
-    -1px 1px 2px var(--color2);
-}
 .foto img{
     width: 55%;
     display: flex;
@@ -360,6 +274,152 @@ i {
     width: 68%;
 }
 /*--------------------------------------------------------------*/
+
+.historical-review, .mission, .vision {
+    /*display: flex;*/
+    gap: 30px;
+    align-items: center
+    background-color: var(--color1);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin: 30px;
+    display: flex;
+    align-items: center
+}
+.historical-review-title, .mission-title,.vision-title {
+    font-family: Poppins, sans-serif;
+    /*position: absolute;*/
+    color: var(--color2);
+    font-size: 3vw;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Evita la interacción del usuario con el texto superior */
+}
+.historical-review-title {
+    text-align: left;
+    top: 5px;
+
+}
+.historical-review, .mission, .vision p{
+    /*text-align: justify;*/
+    color: var(--color2);
+    margin: 10px;
+    font-family: Poppins, sans-serif;
+    font-stretch: condensed;
+    line-height: 1.2em;
+    font-size: 1.1vw;
+    margin-bottom: 20px;
+}
+.contenedor {
+    position: relative;
+    display: inline-block; /* Ajusta el contenedor al tamaño del texto */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titulos{
+    display: flex;
+    justify-content: center;
+}
+.marco{
+    font-size: 50px;
+    margin: 0;
+    /*position: absolute;*/
+    top: 100%;
+    text-transform: uppercase;
+    opacity: 0.06;
+    text-align: center;
+    left: 20px;
+    text-shadow: 
+    1px 1px 2px var(--color2),
+    -1px -1px 2px var(--color2),
+    1px -1px 2px var(--color2),
+    -1px 1px 2px var(--color2);
+}
+/* reseña historica */
+
+.historical-review {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+.historical-review .item:nth-child(3) {
+    grid-column: 1 / span 2; /* El tercer elemento ocupa las dos columnas */
+}
+
+.historical-review-video {
+    flex: 0 0 50%; /* No crecer, no encoger, ocupar 50% */
+    margin-right: 10px; /* Espacio entre el video y el contenido */
+}
+
+.historical-review-content {
+    flex: 0 0 50%; /* No crecer, no encoger, ocupar 50% */
+}
+
+
+video {
+    max-width: 100%; /* Asegúrate de que el video sea responsivo */
+    height: auto; /* Mantiene la proporción del video */
+    border-radius: 20px;
+}
+
+
+/*Mision vision*/
+.mission-imagen img, .vision-imagen img{
+    border-radius: 20px;
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+}
+
+.mission, .vision {
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Alinea los elementos al inicio */
+    margin-bottom: 0px; /* Espacio debajo del contenedor */
+    margin: 0px 30px 0px 30px
+}
+
+.mission-content, .vision-content{
+    flex: 0 0 40%; /* No crecer, no encoger, ocupar 70% */
+    margin-right: 0px; /* Espacio entre el texto y la imagen */
+}
+
+.mission-imagen, .vision-imagen{
+    flex: 0 0 60%; /* No crecer, no encoger, ocupar 30% */
+}
+
+.mission-img, .vision-img{
+    max-width: auto; /* Asegúrate de que la imagen sea responsiva */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+/* objetivo */ 
+.objetivo {
+    background-color: #f0f0f0; /* Color de fondo para el contenedor */
+    padding: 10px; /* Espaciado interno */
+}
+
+.obj {
+    list-style-type: none; /* Quitar viñetas de la lista */
+    padding: 0; /* Quitar padding */
+}
+
+.objetivo {
+    color: var(--color2); /* Color del texto */
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+    padding: 10px; /* Espaciado interno para cada objetivo */
+    border: 1px solid #ccc; /* Opcional: borde alrededor de cada objetivo */
+    border-radius: 5px; /* Opcional: esquinas redondeadas */
+}
+
+
+
+
+
 
 
 
