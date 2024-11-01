@@ -347,7 +347,7 @@ i {
 }
 /*--------------------------------------------------------------*/
 
-.historical-review, .mission, .vision {
+.historical-review{
     /*display: flex;*/
     gap: 30px;
     align-items: center
@@ -360,7 +360,7 @@ i {
     display: flex;
     align-items: center
 }
-.historical-review-title, .mission-title,.vision-title {
+.historical-review-title{
     font-family: Poppins, sans-serif;
     /*position: absolute;*/
     color: var(--color2);
@@ -374,7 +374,7 @@ i {
     top: 5px;
 
 }
-.historical-review, .mission, .vision p{
+.historical-review p{
     /*text-align: justify;*/
     color: var(--color2);
     margin: 10px;
@@ -439,76 +439,27 @@ video {
     border-radius: 20px;
 }
 
-
-/*Mision vision*/
-.mission-imagen img, .vision-imagen img{
-    border-radius: 20px;
-    width: 95%;
-    display: flex;
-    justify-content: flex-end;
-    margin: 0px;
-}
-
-.mission, .vision {
-    display: flex; /* Activa flexbox */
-    align-items: center; /* Alinea los elementos al inicio */
-    margin-bottom: 0px; /* Espacio debajo del contenedor */
-    margin: 0px 30px 0px 30px
-}
-
-.mission-content, .vision-content{
-    flex: 0 0 40%; /* No crecer, no encoger, ocupar 70% */
-    margin-right: 0px; /* Espacio entre el texto y la imagen */
-}
-
-.mission-imagen, .vision-imagen{
-    flex: 0 0 60%; /* No crecer, no encoger, ocupar 30% */
-}
-
-.mission-img, .vision-img{
-    max-width: auto; /* Asegúrate de que la imagen sea responsiva */
-    height: auto; /* Mantiene la proporción de la imagen */
-}
-/* objetivo */ 
-.objetivo {
-    background-color: #f0f0f0; /* Color de fondo para el contenedor */
-    padding: 10px; /* Espaciado interno */
-}
-
-.obj {
-    list-style-type: none; /* Quitar viñetas de la lista */
-    padding: 0; /* Quitar padding */
-}
-
-.objetivo {
-    color: var(--color2); /* Color del texto */
-    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
-    padding: 10px; /* Espaciado interno para cada objetivo */
-    border: 1px solid #ccc; /* Opcional: borde alrededor de cada objetivo */
-    border-radius: 5px; /* Opcional: esquinas redondeadas */
-}
 /*----------------------------------------------------------*/
-/* Estilos para el contenedor del mapa */
+
 /* Contenedor de ubicación */
-.location {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+.ubicacion{
+    font-family: Poppins, sans-serif;
+ 
+    color: var(--color2);
+    font-size: 3vw;
+    top: 0;
+    left: 0;
+    pointer-events: none;
     text-align: center;
+    top: 5px;
 }
-
-/* Estilos de los textos */
-.location p {
-    font-size: 18px;
-    color: #333;
-    margin: 5px 0;
-}
-
-.location span {
-    font-weight: bold;
-    color: #0056b3;
-}
+/*.location{
+    display: flex;
+    border: var(--color2);
+    border-radius: 20px;
+    width: 70%;
+}*/
 
 
 
