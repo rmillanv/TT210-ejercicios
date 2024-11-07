@@ -288,7 +288,7 @@ i {
     display: flex;
     align-items: center
 }
-.historical-review-title, .mission-title,.vision-title {
+.historical-review-title, .mission-title, .vision-title{
     font-family: Poppins, sans-serif;
     /*position: absolute;*/
     color: var(--color2);
@@ -296,6 +296,9 @@ i {
     top: 0;
     left: 0;
     pointer-events: none; /* Evita la interacción del usuario con el texto superior */
+}
+.historical-review-title, .mission-title, .vision-title:hover{
+    color: rgb(var(--titulos));
 }
 .historical-review-title {
     text-align: left;
@@ -315,6 +318,7 @@ i {
 .historical-review, .objetivo p{
     margin-left: 0px;
 }
+
 .contenedor {
     position: relative;
     display: inline-block; /* Ajusta el contenedor al tamaño del texto */
@@ -361,7 +365,7 @@ i {
 }
 
 .historical-review-content {
-    
+    margin-left: 40px;
     flex: 0 0 50%; /* No crecer, no encoger, ocupar 50% */
 }
 
@@ -380,7 +384,7 @@ video {
     width: 95%;
     display: flex;
     justify-content: flex-end;
-    margin: 0px;
+    margin: 30px;
 }
 
 .mission, .vision {

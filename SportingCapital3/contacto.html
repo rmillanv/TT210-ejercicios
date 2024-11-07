@@ -51,58 +51,27 @@
             </a>
         </div>
     </div> 
-    <Div class="container">       
-        <header class="header">                    
- 
-        </header>
-    </div>
-    <main>
-        <section class="cajas">
-            <div class="fut fut1">
-                <div class="cajita">
-                    <h3>CATEGORIA <span>BABY</span></h3>
-                    <p>Requieren de un trabajo especial de fortalecimiento de capacidades, motrices, tecnica y habilidades fisicas - niños y niñas desde los 3 a los 5 años</p>
-                </div>
-            </div>
-            <div class="fut fut2">
-                <div class="cajita">
-                    <h3>CATEGORIA <span>INICIACION</span> </h3>
-                    <p>Inicia tu formación donde incrementas y perfeccionas tus habilidades sociales,trabajo en equipo,respeto y disiplina - edades de 5 a los 8 años</p>
-                </div>
-            </div>
-            <div class="fut fut3">
-                <div class="cajita">
-                    <h3>CATEGORIA <span>SEGUIMIENTO</span></h3>
-                    <p>Aumenta y mejora la resistencia y la velocidad, así como la coordinación motora y visoespacial -niños y niñas desde los 9 a los 17 años</p>
-                </div>
-            </div>
-            <div class="fut fut4">
-                <div class="cajita">
-                    <h3>ENTRENAMIENTO <span>PERSONALIZADO</span></h3>
-                    <p>Trabajo individual de habilidades físicas que les ayuda a tener un correcto desarrollo y a potenciar sus capacidades - Todas las categorias</p>
-                </div>
-            </div>
-        </section>
-        <section class="about">
-            <h6 class="marco">Escuela de Formacion Sporting Capital</h6>
-            <div class="foto">
-                <img class="cajas-imagen1" src="Imagenes/SportingCapital_Azul_sinfondo1.png" alt="imagen sin funcionariosde">                
-            </div>
-            <div class="about-content">
-                <div class="about-title">Acerca de la Escuela de formación Deportiva Sporting Capital</div>                
-                <div class="tag-line" >"Cuando quieres algo con suficiente intensidad, ningún sacrificio es demasiado grande"</div>
-                <p>Un grupo se convierte en un equipo cuando cada miembro está lo bastante seguro de sí mismo y su contribución como para elogiar las habilidades de los demás.</p>
-            </div>
-        </section>
-
-        <section class="cajas">
-            <div>
-                <div class="cajas-imagen">
-                    <img class="cajas-imagen" src="Imagenes/Sporting_Capital_inicio.png" alt="200px">
-                </div>
-            </div>
-        </section>
-    </main>
+    <form action="submit"method="post">
+        <h3>Contacto</h3>
+        <ul><li>
+                <label for="Name">Nombre</label>
+                <input type="text" name="name" id="name">
+            </li>
+            <li>
+                <label for="Mail">Correo Electronico</label>
+                <input type="email" name="user_mail" id="mail">
+            </li>
+            <li>
+                <label for="Telefono">Numero Telefonico</label>
+                <input type="number" name="tel" id="number">
+            </li>
+            <li>
+                <label for="msg">Que pregunta tienes?</label>
+                <textarea name="msg" id="msg"></textarea>
+            </li>
+            <li><button type="submit">Envia tu mensaje</button></li>
+        </ul>
+    </form>
      
 </body>
 
