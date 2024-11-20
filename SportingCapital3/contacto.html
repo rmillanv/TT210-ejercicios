@@ -51,28 +51,27 @@
             </a>
         </div>
     </div> 
-    <form action="submit"method="post">
-        <h3>Contacto</h3>
-        <ul><li>
-                <label for="Name">Nombre</label>
-                <input type="text" name="name" id="name">
-            </li>
-            <li>
-                <label for="Mail">Correo Electronico</label>
-                <input type="email" name="user_mail" id="mail">
-            </li>
-            <li>
-                <label for="Telefono">Numero Telefonico</label>
-                <input type="number" name="tel" id="number">
-            </li>
-            <li>
-                <label for="msg">Que pregunta tienes?</label>
-                <textarea name="msg" id="msg"></textarea>
-            </li>
-            <li><button type="submit">Envia tu mensaje</button></li>
-        </ul>
-    </form>
-     
+    <div class="contact-form">
+        <h1>Contáctanos</h1>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+            <label for="Telefono">Numero Telefonico</label>
+            <input type="number" name="tel" id="number" placeholder="Tu numero celular" required>
+
+            <label for="message">¿Que pregunta tienes?:</label>
+            <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="successMessage" class="hidden">¡Gracias por tu mensaje! Nos pondremos en contacto pronto.</p>
+    </div>
+    <script src="script.js"></script> 
+
 </body>
 
 <footer>

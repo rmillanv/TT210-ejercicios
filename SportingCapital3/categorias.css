@@ -120,7 +120,7 @@ li.current-menu-categorias > a {
     text-decoration: underline;
     background-color: var(--color2);
     font-family: Poppins, sans-serif;
-    font-size: 14px; /* Tamaño base */
+    font-size: 1vw; /* Tamaño base */
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -222,7 +222,7 @@ i {
     justify-content: end;
     background-color: white;
     height: 300px;
-    width: 25%;
+    width: 300%;
     color: var(--color1);
     text-shadow: 
     1px 1px 0px var(--color2),
@@ -235,12 +235,13 @@ i {
     padding: 0px 0px 0px 20px;
 }
 .fut p{
+    text-align: center;
     margin: 0px;
     padding: 5px 5px 5px 8px;
     font-family: Poppins, sans-serif;
     font-stretch: condensed;
     line-height: 1.2em;
-    font-size: 0.8em;
+    font-size: 1.5em;
 }
 .cajita{
     background-color: var(--color3) ;
@@ -359,11 +360,24 @@ i {
     margin: 10px;
     font-family: Poppins, sans-serif;
 }
+.objetivo{
+    display: flex;
+    align-items: center;
+    line-height: 0.5em;
+    font-size: 1em;
+    flex-direction: column;
+}
+.objetivo p{
+
+    margin: 0.5em;
+}
 .title{
     text-align: center;
     color: var(--color2);
 }
-
+.parrafo p{
+    font-size: 1em;
+}
 .caja{
     flex-direction: column;
 }

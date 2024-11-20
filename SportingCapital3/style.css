@@ -239,7 +239,7 @@ video {
     text-decoration: underline;
     background-color: var(--color2);
     font-family: Poppins, sans-serif;
-    font-size: 14px; /* Tamaño base */
+    font-size: 1vw; /* Tamaño base */
     text-decoration: none;
     display: flex;
     flex-direction: column;
