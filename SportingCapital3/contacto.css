@@ -373,7 +373,7 @@ i {
 .contact-form button {
     width: 100%;
     padding: 10px;
-    background-color: #5cb85c;
+    background-color: var(--color2);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -382,7 +382,9 @@ i {
 }
 
 .contact-form button:hover {
-    background-color: #4cae4c;
+    background-color: var(--titulos);
+    color: var(--color2);
+    border: 1px solid var(--color2);
 }
 
 .hidden {

@@ -41,7 +41,10 @@ body {
 .main-menu{
     align-items: center;
 }
-
+li.current-menu-profesionales > a {
+    color: rgb(var(--titulos)); 
+    font-weight: bold; 
+}
 .nav{
     color: var(--titulos);
     display: flex;
